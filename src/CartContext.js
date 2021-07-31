@@ -61,8 +61,14 @@ const CartProvider = (props) => {
         })
         setCartItems([...tempCart]);
     }
+    const handleDelCartItem = (id) => {
+        let tempCart = cartItems.filter((item)=>{
+            return item.id !== id;
+        })
+        setCartItems([...tempCart])
+    }
     return (
-        <CartContext.Provider value={{cartItems,setCartItems,productList,handleAddToCart,handleAddQty,handleDelQty}}>
+        <CartContext.Provider value={{cartItems,setCartItems,productList,handleAddToCart,handleAddQty,handleDelQty,handleDelCartItem}}>
             {props.children}
         </CartContext.Provider>
     )

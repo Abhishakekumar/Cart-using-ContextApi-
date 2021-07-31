@@ -44,3 +44,21 @@
 .cartItem-total h4 {
   margin-left: 50px;
 }
+.x-container {
+  display: flex;
+  justify-content: space-between;
+}
+.x-container button {
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 27px;
+  width: 30px;
+  height: 30px;
+}
+.x-container button:hover {
+  background-color: red;
+  color: aliceblue;
+  border-radius: 100%;
+  font-size: 22px;
+}

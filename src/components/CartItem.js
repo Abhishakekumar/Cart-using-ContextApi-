@@ -2,7 +2,7 @@ import React,{useContext} from 'react'
 import { CartContext } from '../CartContext';
 
 export default function CartItem(props) {
-    const {handleAddQty,handleDelQty} = useContext(CartContext);
+    const {handleAddQty,handleDelQty,handleDelCartItem} = useContext(CartContext);
     const {id,productName,productPrice,productImg,qty} = props;
     const totalPrice = productPrice*qty;
     return (
@@ -11,7 +11,11 @@ export default function CartItem(props) {
                     <img className="img" src={productImg} alt="Nike-Shoes"/>
             </div>
             <div className="cartItem-content">
+                <div className="x-container">
                 <h1>{productName}</h1>
+                <button onClick ={()=>handleDelCartItem(id)}>&times;</button>
+                </div>
+                
                 <div className="cartItem-qty">
                     <h3>QTY :</h3>
                     <button className="btn" onClick={()=>handleAddQty(id)}>+</button>
