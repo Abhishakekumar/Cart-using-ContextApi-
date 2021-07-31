@@ -1,0 +1,8 @@
+@import "./Home.css";
+@import "./Product.css";
+@import "./Navbar.css";
+@import "./CartItem.css";
+@import "./Cart.css";
+* {
+  margin: 0;
+}

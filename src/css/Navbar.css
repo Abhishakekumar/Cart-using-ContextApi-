@@ -1,0 +1,16 @@
+nav {
+  height: 60px;
+  border-bottom: 1px solid black;
+  display: flex;
+  padding-left: 65px;
+}
+nav a {
+  padding: 15px 35px;
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+}
+nav a:hover {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
