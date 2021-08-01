@@ -4,6 +4,7 @@
   width: 1250px;
   margin: 0 auto;
   margin-top: 40px;
+  align-items: flex-start;
 }
 .cart-items {
   width: 550px;
@@ -12,9 +13,9 @@
   /* border: 1px solid black; */
 }
 .cart-bill {
-  padding: 25px;
+  padding: 50px 25px;
   width: 350px;
-  height: 300px;
+  min-height: 200px;
   border: 1px solid black;
 }
 .cart-bill-heading {
